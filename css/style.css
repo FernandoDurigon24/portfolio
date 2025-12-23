@@ -1,0 +1,279 @@
+.main-title{
+	height: calc(100dvh - 88px);
+	width: 50%;
+}
+*{
+	font-family: Arial;
+	color: #FFF!important;
+}
+body{
+	background: linear-gradient(120deg,#0C0C25 , #000000 52%,  #999	 52% );
+	scroll-behavior: smooth;
+}
+.navbar > div,
+.main-box{
+	max-width:1320px;
+}
+.navbar{
+	height: 88px;
+	background: linear-gradient(90deg , #0C0C25 , #000000);
+}
+.wrapper{
+	
+	height: 100dvh;
+}
+.main-box{
+	position: relative;
+	z-index: 1;
+	height: 100%;
+}
+.navbar{
+	box-shadow: 18px 7px 14px 0px #444a;
+}
+main{
+	height: calc(100vh - 88px) ;
+	overflow-x: hidden;
+}
+.size65{
+	font-size: 65px;
+	text-decoration: underline;
+}
+.size56{
+	font-size: 56px;
+}
+.p-title{
+	line-height: 1.0 !important;
+}
+.btn-primary{
+	background: #F05A24!important;
+	border:0!important;
+	max-width: 309px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 100%;
+}
+.btn-primary:hover{
+	animation: hover 1s linear infinite;
+}
+@keyframes hover{
+	0%{
+		transform: scale(1.0);
+	}
+	50%{
+		transform:scale(1.009) ;
+		background: #00F7Ba !important;
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
+.text-warning{
+	color:  #F05A24!important;
+}
+.btn{
+	cursor: pointer;
+	border-radius: 12px;
+	align-content: center;
+	height: 55px;
+}
+.cuadrado-a{
+	left: 3%;
+}
+.cuadrado-b{
+	right: 3%;
+	bottom: 5%;
+	transform: rotate(45deg);
+}
+.btn-white{
+	background: #FFF!important;
+	color: #0C0C25!important;
+
+}
+@media (max-width:1108px){
+	.size65{
+		font-size: 48px;
+	}
+	.size56{
+		font-size: 36px;
+	}
+	.btn{
+		font-size:16px ;
+		height: 48px;
+	}
+	.cuadrados{
+		height: 80px;
+	}
+}
+.boxmenu{
+	margin-left: auto;
+}
+.img-card-custom{
+	height: 60px;
+	width: 100%;
+	display: block;
+	margin:auto;
+	object-fit: scale-down;
+}
+.card{
+	padding: 16px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	overflow:hidden;
+	margin: auto;
+	transition: all;
+}
+.card:hover{
+	animation: latir 1s linear infinite;
+}
+.bg-dark{
+	background: #000b!important;
+}
+@keyframes latir{
+	0%{
+		transform: scale(0.95);
+	}
+	50%{
+		transform: scale(1.0);
+	}
+	100%{
+		transform: scale(0.95);
+	}
+}
+.animated-box{
+	scale: 25%;
+	transition: all .5s;
+}
+.active{
+	scale: 100%;
+}
+.bg-negro{
+	background: #000;
+}
+.box-data-exp{
+	height: 250px;
+}
+.rrss{
+	max-width: 484px;
+}
+.rrss-title{
+	font-size:2.7rem;
+}
+.footer-list{
+	font-size: 13px;
+}
+.activo{
+	border-bottom: 1px solid #f05a24 !important;
+}
+.close-menu{
+	font-size: 13px;
+	color: #fa0000 !important;
+}
+.hambuerger-list{
+	width:32px;
+	height: 2px;
+	margin-bottom: 6px;
+	background: #FFF;
+	position: relative;
+	display: block; 
+	
+}
+.butonMenu{
+	height: 40px;
+	width: 50px;
+	display: none;
+	justify-content: space-between ;
+	position: relative!important;
+	flex-direction: column;
+	background: transparent!important;
+	border:0;
+	padding: 8px 0;
+}
+.butonMenu:hover > .hambuerger-list:nth-of-type(1),
+.butonMenu:hover > .hambuerger-list:nth-of-type(2),
+.butonMenu:hover > .hambuerger-list:nth-of-type(3){
+	animation:showMenu .1s linear 1 ;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+
+}
+@keyframes showMenu{
+	from{
+		transform: rotate(0deg) translate(-5px);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+ .hambuerger-list{
+	
+}
+@media (max-width:767px){
+	.size65{
+		font-size: 48px;
+	}
+	.size56{
+		font-size: 36px;
+	}
+	.btn{
+		font-size:16px ;
+		height: 48px;
+	}
+	.cuadrados{
+		height: 80px;
+	}
+	.navbar{
+		height: 65px;
+	}
+	.navbar-brand{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px){
+	.box-data-exp{
+		height: 175px;
+	}
+	.span-rrss{
+		font-size: 11px;
+	}
+	.text-description{
+		font-size: 16px !important;
+	}
+	.text-section-title{
+		font-size: 2rem !important;
+	}
+	.boxmenu{
+		position: absolute;
+		width: 100%;
+		background: #FFF;
+	}
+	.navlist li a{
+		color: #000!important;
+		font-size: 19px;
+	}
+	.navlist li{
+		padding: 8px 0;
+	}
+	.navlist{
+		flex-direction: column;
+	}
+	.boxmenu {
+		top: 0;
+		left: 0;
+		height: 100dvh;
+		z-index: 9;
+		padding: 16px;
+	}
+	#boxMenu{
+		transition: .3s all;
+		margin-left: -100%;
+	}
+	.butonMenu{
+		display: flex;
+	}
+}
