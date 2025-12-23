@@ -20,7 +20,7 @@ body{
 }
 .wrapper{
 	
-	height: 100dvh;
+	min-height: 100dvh;
 }
 .main-box{
 	position: relative;
@@ -275,5 +275,13 @@ main{
 	}
 	.butonMenu{
 		display: flex;
+	}
+	main{
+		height: auto;
+		min-height: 100dvh!important;
+		
+	}
+	.box-flex-main {
+		min-height: 85vh;
 	}
 }
