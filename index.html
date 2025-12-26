@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Desarrollador web | Fernando Durigon</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrapper main-wrapper">
@@ -57,7 +58,7 @@
             <h1 class="size56">Desarrollador web</h1>
           </p>
           <div class="buttons-box d-flex flex-wrap gap-2">
-           <a href="#fernando" class="btn mb-3 mb-xxl-0 btn-primary">¿Necesitas una web?</a> 
+           <a href="https://wa.me/" class="btn mb-3 mb-xxl-0 btn-primary">¿Necesitas una web? </a> 
            <a href="" class="btn btn-white px-4 fw-bold">Ver mis proyectos</a>
          </div>
        </div>
@@ -223,6 +224,52 @@
           <span class="span-rrss text-dark">Correo electrónico</span>
         </a>
       </div>
+      <div class="col-12 px-0" >
+        <h4 class="text-dark mt-5 mb-4">Enviame un correo electrónico</h4>
+        <form class="row mx-auto " id="contactForm">
+          <div class="col-12 mb-3">
+            <label class="text-start mb-2 d-block text-dark">¿Qué tipo de proyecto necesitas?</label>
+            <select class="form-select text-dark" id="tipoConsulta"  required>
+              <option selected disabled value="">-- Seleccione --</option>
+              <option>Sitio web institucional</option>
+              <option>Landing page</option>
+              <option>Sistema de turnos</option>
+              <option>Sistema POS / Ventas</option>
+              <option>E-commerce</option>
+              <option>Plataforma a medida </option>
+              <option>Mantenimiento / Soporte</option>
+              <option>No estoy seguro</option>
+            </select>
+          </div>
+
+          <div class="col-12 mb-3">
+            <label class="text-start mb-2 d-block text-dark">¿En que etapa estas?</label>
+            <select class="form-select text-dark" required id="consulta">
+              <option selected disabled value="">-- Seleccione --</option>
+              <option>Solo consultando</option>
+              <option>Quiero presupuesto</option>
+              <option>Quiero empezar lo antes posible</option>
+              <option>Tengo un sistema y necesito mejoras</option>
+            </select>
+          </div>
+          <div class="col-12 mb-3">
+            <label class="text-start mb-2 d-block text-dark">N° de telefonico.</label>
+            <input type="" placeholder="Ej: +549 351 - 359 250 6" class="form-control" required id="phone" name="">
+          </div>
+          <div class="col-12 mb-3">
+            <label class="text-start mb-2 d-block text-dark">Correo electrónico</label>
+            <input type="email" placeholder="tucorreo@ejemplo.com" class="form-control" id="email" required name="">
+          </div>
+
+          <div class="col-12">
+            <textarea id="text" rows="8" style="resize: none;" class="text-dark form-control" required placeholder="Contame brevemente qué idea tenes, qué problema querés soluciónar o que sistena necesitas..."></textarea>
+          </div>
+
+          <div class="col-12 py-4">
+            <button type="button" id="enviarCorreo" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -249,8 +296,7 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="js/sendEmail.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
