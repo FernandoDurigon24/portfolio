@@ -212,6 +212,9 @@ main{
  .hambuerger-list{
 	
 }
+option{
+	color: #000!important;
+}
 @media (max-width:767px){
 	.size65{
 		font-size: 48px;
