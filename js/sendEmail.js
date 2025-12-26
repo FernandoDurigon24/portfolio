@@ -16,10 +16,11 @@ $('#enviarCorreo').click(function() {
 			url:'https://byteflowpos.online/correo.php',
 			data:{campoUno:campoUno,campoDos:campoDos,campoTres:campoTres, campoCuatro:campoCuatro, campoCinco:campoCinco},
 			success: function(res){
-				console.log( res );
+				alert("¡Mensaje enviado con exito!");
+				$('input').val('');
 			}
 		})
 	}else{
-		alert('estan vacios')
+		alert('Complete los campos obligatorios.');
 	}
 })
