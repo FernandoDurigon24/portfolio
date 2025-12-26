@@ -15,7 +15,7 @@ $('#enviarCorreo').click(function() {
 			type:'post',
 			url:'https://byteflowpos.online/correo.php',
 			data:{campoUno:campoUno,campoDos:campoDos,campoTres:campoTres, campoCuatro:campoCuatro, campoCinco:campoCinco},
-			success: function(res){
+			success: function(){
 				alert("¡Mensaje enviado con exito!");
 				$('input').val('');
 			}
