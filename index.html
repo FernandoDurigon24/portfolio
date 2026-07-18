@@ -12,10 +12,10 @@
 </head>
 <body>
   <div class="wrapper main-wrapper">
-    <header>
+    <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a href="" class="navbar-brand fw-bolder"> <span> &lt;/&gt; </span>Fernando Durigón</a>
+          <a href="" class="navbar-brand fw-bolder"> <span> <img src="img/Logo-1.png"></a>
           <button class="showMenu justify-content-center align-items-center butonMenu">
             <div class="hambuerger-list"></div>
             <div class="hambuerger-list"></div>
@@ -23,23 +23,29 @@
           </button>
           <div class="boxmenu text-sm-start" id="boxMenu">
             <ul class="d-flex navlist showMenu gap-2 p-0 m-0 list-unstyled flex-wrap">
-              <li class="d-block fw-semibold close-menu text-end d-sm-none">
+              <li class="fw-semibold close-menu text-end">
                 CERRAR
               </li>
-              <li class="d-block d-sm-none mb-4">
+              <li class="menu-text mb-4">
                 <span class="fs-5 text-dark fw-semibold ">Menú</span>
               </li>
               <li>
                 <a href="#" class="text-decoration-none activo">Inicio</a>
               </li>
               <li>
-                <a href="#sobreMi" class="text-decoration-none">Sobre mi</a>
+                <a href="#about" class="text-decoration-none">Sobre mi</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none">Proyectos</a>
+                <a href="#proyectos" class="text-decoration-none">Proyectos</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none">Contacto</a>
+                <a href="#contacto" class="text-decoration-none">Contacto</a>
+              </li>
+              <li>
+                <a href="#skills" class="text-decoration-none" >Skills</a>
+              </li>
+              <li>
+                <a href="#formacion" class="text-decoration-none" >Formación</a>
               </li>
             </ul>
 
@@ -47,253 +53,404 @@
         </div>
       </nav>
     </header>
-    <main class="px-4">
-      <div class="row mx-auto position-relative main-box">
-        <div class="col-sm-6 box-flex-main align-content-center h-100 col-lg-5">
-          <p class="p-title">
-            <span class="size65">
-              ¡Hola!
-            </span>
-            <strong class="d-block pt-3 size56">Soy <strong class="text-warning">Fernando</strong></strong>
-            <h1 class="size56">Desarrollador web</h1>
-          </p>
-          <div class="buttons-box d-flex flex-wrap gap-2">
-           <a href="#contacto" class="btn mb-3 mb-xxl-0 btn-primary">¿Necesitas una web? </a> 
-           <a href="" class="btn btn-white px-4 fw-bold">Ver mis proyectos</a>
-         </div>
+    <div class="row mx-auto boxes">
+      <div class="col-lg-6 h-100 col-md-12 p-3 box-main">
+          <div class="p-3 bg-white align-content-center text-center h-100 rounded-3 shadow w-100">
+            <p class="p-title">
+              <span class="size65">
+                ¡Hola!
+              </span>
+              <strong class="d-block pt-3 size56">Soy <strong class="text-warning">Fernando</strong></strong>
+              <h1 class="fs-5">Desarrollador Full Stack, Estudiante de Ingeniería en Sistemas</h1>
+            </p>
+            <div class="buttons-box w-100 justify-content-center   d-flex flex-wrap gap-2">
+             <a href="#proyectos" class="btn mb-3 mb-xxl-0 btn-primary">Explorar proyectos</a> 
+           </div>
+          </div>
        </div>
-       <div class="col-sm-6 box-flex-main align-content-center col-lg-7 photo-container position-relative" id="fernando">
-        <img src="img/cuadrado-1-8.png" class="position-absolute cuadrados cuadrado-a">
-        <img src="img/FERNANDO-8.png" class="mx-auto d-block img-fluid">
-        <img src="img/cuadrado-1-8.png" class="position-absolute cuadrados cuadrado-b">
+       <div class="col-lg-6 col-md-12 p-3 box-flex-main h-100 align-content-center box-main position-relative" id="fernando">
+        <div class="p-3 bg-white h-100 d-flex flex-column justify-content-center wrapp-img-container rounded-3 shadow">
+          <div class="position-relative img-container h-75">
+            <img src="img/Fernando.png" class="mx-auto img-fernando d-block w-100 h-100">
+          </div>
+          <h4 class="text-center fs-5 border-bottom pb-3">Mis redes sociales</h4>
+          <div class="rrss-container">
+            <ul class="ul-rrss ">
+              <li>
+                <a href="https://github.com/FernandoDurigon24" target="_blank" class="">
+                    <i class="bi bi-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/luis-durigon/" target="_blank" class="">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:durigon.dev.97@gmail.com" class="">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> 
       </div>
-      
     </div>
-
-  </main>
 
 </div>
-<section class="container mb-5 about animated-box" id="sobreMi">
-  <div class="row mx-auto about-content align-content-center">
-
-    <div class="col-sm-12 mb-4">
-      <h2 class="fw-bolder text-center">¿Qué hago y con que trabajo?</h2>
+<div class="row mx-auto boxes mb-3">
+  <div class="col-12 mb-4 " id="about">
+    <div class="p-3 bg-white rounded-3">
+      <h3 class="mb-3"><i class="bi bi-file-person-fill"></i> Sobre mi</h3>
+      <p>
+        ¡Hola! Soy <strong class="fw-bold">Luis Fernando Durigon</strong>, estudiante de Ingeniería en Sistemas de Información y desarrollador de software con un fuerte interés por crear soluciones que resuelvan problemas reales.
+      </p>
+      <p>
+        Disfruto desarrollar aplicaciones web modernas, escalables y fáciles de usar, participando tanto en el diseño de la interfaz como en la lógica del sistema. Me apasiona aprender nuevas tecnologías, mejorar continuamente mis habilidades y enfrentar desafíos que me permitan crecer profesionalmente.
+      </p>
+      <p>
+        A lo largo de mi formación he trabajado con tecnologías como PHP, JavaScript, Python, MySQL, HTML, CSS, Bootstrap, Tailwind CSS, React y Git, desarrollando proyectos que abarcan desde sistemas de gestión hasta aplicaciones orientadas a pequeños y medianos comercios.
+      </p>
+      <p>
+        Uno de mis principales proyectos es <strong>Simplegestion.click</strong>, un sistema de punto de venta desarrollado desde cero, donde apliqué conocimientos de desarrollo web, bases de datos, experiencia de usuario y arquitectura de software para construir una solución completa.
+      </p>
+      <p>
+        Me considero una persona responsable, autodidacta y orientada a resultados. Siempre busco escribir código limpio, seguir buenas prácticas y aprender de cada proyecto en el que participo.
+      </p>
+      <p>
+        Actualmente continúo ampliando mis conocimientos en desarrollo de software y nuevas tecnologías, con el objetivo de crecer como desarrollador y formar parte de equipos donde pueda aportar valor, seguir aprendiendo y construir productos de calidad.
+      </p>
+    </div> 
+  </div>  
+  <div class="col-12 mb-3" id="skills">
+    <div class="bg-primary p-3 rounded-3">
+      <h3 class="border-bottom text-white fw-bold pb-3 mb-3"><i class="bi bi-file-earmark-code"></i> Stack tecnológico (Skills)</h3>
+      <div class="row mx-auto">
+        <div class="col-12 col-lg-4 col-sm-4 col-xl-4">
+          <h4 class="fs-5 mb-3 text-white"><i class="bi bi-layout-text-window-reverse"></i> Front-end</h4>
+          <ul class="stacks">
+            <li>
+              HTML5
+            </li>
+            <li>
+              CSS3
+            </li>
+            <li>
+              JavaScript
+            </li>
+            <li>
+              React
+            </li>
+            <li>
+              Bootstrap
+            </li>
+            <li>
+              Tailwind CSS
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 col-sm-4 col-xl-4">
+          <h4 class="fs-5 mb-3 text-white"><i class="bi bi-robot"></i> Back-end</h4>
+          <ul class="stacks">
+            <li>
+              PHP
+            </li>
+            <li>
+              Python
+            </li>
+            <li>
+              Java
+            </li>
+            
+          </ul>
+        </div>  
+        <div class="col-12 col-lg-4 col-sm-4 col-xl-4">
+          <h4 class="fs-5 mb-3 text-white"><i class="bi bi-robot"></i> Bases de datos</h4>
+          <ul class="stacks">
+            <li>
+              MySQL
+            </li>
+            <li>
+              PostgreSQL
+            </li>
+            
+          </ul>
+        </div>  
+      </div>
     </div>
-    <div class="col-sm-10 mx-auto">
-      <div class="row mx-auto justify-content-center">
+  </div>  
 
-        <div class="col-sm-3 py-3 text-center px-3 mb-0 mb-lg-4 bg-dark">
-          <h3 class="text-warning">Sistemas a medida</h3>
-          <p> e-commerce, POS, Autoadministrables, CMS</p>
+  <div class="col-12" id="proyectos">
+    <div class="proyectos p-3 rounded-3 shadow">
+      <h4 class="text-white text-center ">Mis proyectos</h4>
+    </div>
+  </div>
+  <div class="col-sm-4 col-12 p-3 border-0  rounded-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <figure class="bg-dark rounded-3 py-2">
+          <img src="img/logo-simplegestion.png" class="img-fluid img-card-proyects object-fit-contain">
+        </figure>
+        <h3>Sistema POS</h3>
+        <p class="description-proyect">
+          <strong>Simplegestion.click</strong> es un sistema de punto de venta (POS) desarrollado para ayudar a pequeños y medianos comercios a gestionar sus operaciones diarias de manera simple y eficiente. Entre sus funcionalidades se encuentran la administración de ventas, control de stock, gestión de clientes, proveedores, ingresos y egresos, impresión de tickets y reportes. El proyecto fue desarrollado íntegramente por mí utilizando PHP y MySQL en el backend, y HTML5, Bootstrap, JavaScript y jQuery en el frontend.
+        </p>
+        <div class="mb-3 border p-2 rounded-3">
+          <span class="d-block description-proyect">Tecnologías:</span>
+
+          <span class="badge text-bg-info">PHP </span>
+          <span class="badge text-bg-info">MySQL </span>
+          <span class="badge text-bg-info">HTML5</span>
+          <span class="badge text-bg-info">Bootstrap</span>
+          <span class="badge text-bg-info">JavaScript </span>
+          <span class="badge text-bg-info">jQuery </span>
         </div>
-
-        <div class="col-sm-3 py-3 text-center px-3 mb-0 mb-lg-4 bg-dark">
-          <h3 class="text-warning">Landing pages</h3>
-          <p>Páginas optimizadas para ventas, anuncios y conversión.</p>
-        </div>
-
-        <div class="col-sm-3 py-3 text-center px-3 mb-0 mb-lg-4 bg-dark">
-          <h3 class="text-warning">Diseño web</h3>
-          <p>Diseño moderno, responsive y enfocado en experiencia de usuario.</p>
-        </div>
-
-        <div class="col-sm-3 py-3 text-center px-3 mb-4 mb-lg-4 bg-dark">
-          <h3 class="text-warning">Pagos y APIs</h3>
-          <p>Integración de pasarelas de pago y consumo de APIs REST.</p>
-        </div>
-
-        <div class="col-6 mb-4 col-lg-4 col-xl-3">
-          <div class="card">
-            <img src="img/stacks/download.png" class="img-card-custom">
+        <div class="d-flex gap-2 justify-content-between">
+          <div class="w-50">
+            <a href="https://simplegestion.click/" target="__BLANK" class="btn-success btn w-100">Visitar el sitio</a>
+          </div>
+          <div class="w-50">
+            <a href="https://github.com/FernandoDurigon24/byteflowpos.git" target="__BLANK" class="btn-dark btn w-100"><i class="bi bi-github"></i> Github</a>
           </div>
         </div>
-        <div class="col-6 mb-4 col-lg-4 col-xl-3">
-          <div class="card">
-            <img src="img/stacks/HTML5.webp" class="img-card-custom">
-          </div>
-        </div>
-        <div class="col-6 mb-4 col-lg-4 col-xl-3">
-          <div class="card">
-            <img src="img/stacks/java.svg" class="img-card-custom">
-          </div>
-        </div>
-        <div class="col-6 mb-4 col-lg-4 col-xl-3">
-          <div class="card">
-            <img src="img/stacks/javascript.png" class="img-card-custom">
-          </div>
-        </div>
-        <div class="col-6 mb-4 col-lg-4 col-xl-3">
-          <div class="card">
-            <img src="img/stacks/php.svg" class="img-card-custom">
-          </div>
-        </div>
-        <div class="col-6 mb-4 col-lg-4 col-xl-3">
-          <div class="card">
-            <img src="img/stacks/Python-logo-notext.svg.png" class="img-card-custom">
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="col-sm-4 col-12 p-3 border-0  rounded-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <figure class="bg-white rounded-3 py-2">
+          <img src="img/lemmobile-logo.webp" class="img-fluid img-card-proyects object-fit-contain">
+        </figure>
+        <h3>e-commerce autoadministrable</h3>
+        <p class="description-proyect mb-3">
+          <strong>Lemmobile</strong> es un sitio web de comercio electrónico desarrollado para una empresa de Córdoba dedicada a la venta de muebles. La plataforma permite administrar de forma sencilla el catálogo de productos, categorías, imágenes y contenido del sitio mediante un panel de administración, facilitando la gestión diaria del negocio sin necesidad de conocimientos técnicos.
 
+          El proyecto fue desarrollado íntegramente por mí utilizando PHP y MySQL en el backend, y HTML5, CSS3, Bootstrap, JavaScript y jQuery en el frontend, priorizando una interfaz moderna, responsive y una experiencia de navegación intuitiva para los clientes.
+        </p>
+        <div class="mb-3 border p-2 rounded-3">
+          <span class="d-block description-proyect">Tecnologías:</span>
+
+          <span class="badge text-bg-info">PHP </span>
+          <span class="badge text-bg-info">MySQL </span>
+          <span class="badge text-bg-info">HTML5</span>
+          <span class="badge text-bg-info">Css3</span>
+          <span class="badge text-bg-info">JavaScript </span>
+        </div>
+        <div class="d-flex gap-2 justify-content-between">
+          <div class="w-50">
+            <a href="https://lemmobile.com.ar/" target="__BLANK" class="btn-success btn w-100">Visitar el sitio</a>
+          </div>
+          <div class="w-50">
+            <a href="https://github.com/FernandoDurigon24/lemmobile.git " target="__BLANK" class="btn-dark btn w-100"><i class="bi bi-github"></i> Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <div class="col-sm-4 col-12 p-3 border-0  rounded-3">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <figure class="bg-white rounded-3 py-2">
+          <img src="img/petrogas.png" class="img-fluid img-card-proyects object-fit-contain">
+        </figure>
+        <h3>Diseño y maquetado</h3>
+        <p class="description-proyect mb-3">
+          <strong>Petrogas S.A</strong> es un sitio web institucional desarrollado para una empresa dedicada al sector energético. El proyecto estuvo enfocado en el diseño y maquetación de una interfaz moderna, responsive y de fácil navegación, buscando transmitir una imagen profesional y fortalecer la presencia digital de la empresa.
+        </p>
+        <div class="mb-3 border p-2 rounded-3">
+          <span class="d-block description-proyect">Tecnologías:</span>
+
+          <span class="badge text-bg-info">HTML5</span>
+          <span class="badge text-bg-info">Css3</span>
+          <span class="badge text-bg-info">JavaScript </span>
+        </div>
+        <div class="d-flex gap-2 justify-content-between">
+          <div class="w-50">
+            <a href="https://petrogassa.com/" target="__BLANK" class="btn-success btn w-100">Visitar el sitio</a>
+          </div>
+          <div class="w-50">
+            <a href="https://github.com/FernandoDurigon24/petrogas-sa.git" target="__BLANK" class="btn-dark btn w-100"><i class="bi bi-github"></i> Github</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section>
-<section class="container mb-5 animated-box enfoque" id="enfoque">
- <div class="row mx-auto">
 
-   <div class="col-sm-6 px-0">
-    <img src="img/paul-calescu-KW3m50XRhjk-unsplash.jpg" class="img-fluid">
-  </div>
-  <div class="col-sm-6 py-4 bg-dark">
-    <div class="d-flex flex-column container justify-content-center gap-4 h-100">
-      <div>
-        <h2 class="fw-bolder mb-5">Sobre mi:</h2> 
-        <p>
-          Soy Fernando Durigon, desarrollador web con más de 3 años de experiencia dedicados al estudio y desarrollo de soluciones digitales. A lo largo de este tiempo me he formado y trabajado con diversas tecnologías, entre ellas HTML5, CSS3, JavaScript, PHP, Python y Java, así como también con frameworks y herramientas modernas como Bootstrap, WordPress y Angular.
-        </p>
-        <p class="fw-bolder mb-5">
-           Me especializo en la creación de sitios web funcionales, modernos y orientados a resultados, priorizando siempre la experiencia del usuario, el rendimiento y la escalabilidad de cada proyecto. Disfruto transformar ideas en soluciones reales, adaptadas a las necesidades de cada persona o negocio.
-        </p>
-        <p class="fw-bolder mb-5">
-          La tecnología no solo es mi trabajo, sino también una vocación. Me motiva aprender constantemente, mantenerme actualizado y ser de ayuda para las personas, brindando soluciones claras, eficientes y confiables que aporten valor real.
-        </p>
+  <div class="col-12" id="formacion">
+    <div class="p-4 bg-white rounded-3 shadow-sm">
 
-        <h2 class="fw-bolder mb-5">Mi enfoque:</h2>
+        <h4 class="mb-4">
+            <i class="bi bi-mortarboard-fill text-primary"></i>
+            Formación
+        </h4>
 
-        <h4 class="mb-3 fs-5 fw-bold">Colaborativo</h4>
-        <p>
-          Creo que la colavoración es una herramienta necesaria para lograr nuestros meritos. En la creación de sitios webs, me sumo a tu equipo y me enfoco en tu visión y tus objetivos, colaborando estrechamente contigo para crear un sitio web que no solo refleje tu marca sino que tambien exceda tus espectativas.
-        </p>
+        <!-- Ingeniería -->
+          <div class="border-start border-4 border-primary ps-3 mb-4">
+              <h5 class="mb-1">Ingeniería en Sistemas de Información</h5>
+              <p class="text-primary fw-semibold mb-1">
+                  Universidad Tecnológica Nacional (UTN) - Facultad Regional Córdoba
+              </p>
+              <small class="text-muted">
+                  En curso
+              </small>
+
+              <p class="mt-2 mb-0 text-secondary">
+                  Formación orientada al análisis, diseño y desarrollo de software,
+                  estructuras de datos, algoritmos, bases de datos, ingeniería de
+                  software y gestión de proyectos.
+              </p>
+          </div>
+
+          <!-- Udemy -->
+          <div class="border-start border-4 border-success ps-3 mb-4">
+              <h5 class="mb-1">
+                  Desarrollo Web Full Stack
+              </h5>
+
+              <p class="text-success fw-semibold mb-1">
+                  Udemy
+              </p>
+
+              <small class="text-muted">
+                  Curso completado
+              </small>
+
+              <p class="mt-2 mb-0 text-secondary">
+                  Formación en desarrollo web utilizando HTML5, CSS3, JavaScript,
+                  Bootstrap, jQuery, PHP, Programación Orientada a Objetos (POO),
+                  MySQL y desarrollo de aplicaciones web completas.
+              </p>
+          </div>
+
+          <!-- Autoformación -->
+          <div class="border-start border-4 border-warning ps-3">
+              <h5 class="mb-1">
+                  Aprendizaje continuo
+              </h5>
+
+              <p class="text-warning fw-semibold mb-1">
+                  Documentación oficial y proyectos personales
+              </p>
+
+              <small class="text-muted">
+                  Formación autodidacta
+              </small>
+
+              <p class="mt-2 mb-0 text-secondary">
+                  Estudio constante de tecnologías como React, Git, APIs REST,
+                  diseño responsive y buenas prácticas de desarrollo mediante
+                  documentación oficial y la creación de proyectos reales.
+              </p>
+          </div>
+
       </div>
-
-      <div>
-        <h4 class="mb-3 fs-5 fw-bold">Interativo</h4>
-        <p>
-          Adopto un enfoque interativo en mi trabajo para garantizar que el resultado final se alinee con tu visión y tus ideas creativas para reflejar la identidad unica de tu marca sin descuidar ningun detalle.  
-        </p>
-      </div>
-    </div>
   </div>
 </div>
-</section>
-<section class="bg-negro animated-box">
-  <div class="container">
-    <div class="row mx-auto">
-      <div class="col-sm-4 box-data-exp d-flex flex-column justify-content-center gap-3 py-3 text-center">
-        <p class="mb-0 fs-3 text-warning">
-          Más de 6 sitios webs creados
-        </p>
-        <i class="bi text-warning bi-globe fs-1"></i>
-      </div>
-      <div class="col-sm-4 box-data-exp d-flex flex-column justify-content-center gap-3 py-3 text-center">
-        <p class="mb-0 fs-3 text-warning">
-          Más de 3 años de experiencia en diseño
-        </p>
-        <i class="bi text-warning bi-code-slash fs-1"></i>
-      </div>
-      <div class="col-sm-4 box-data-exp d-flex flex-column justify-content-center gap-3 py-3 text-center">
-        <p class="mb-0 fs-3 text-warning">
-          Comprometido con soluciones modernas y eficientes
-        </p>
-        <i class="bi text-warning fs-1 bi-check-circle"></i>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-white" id="contacto">
-  <div class="container text-center py-4">
-    <h3 class="rrss-title text-dark mb-4 text-section-title">Comunicate conmigo</h3>
-    <p class="fs-5 text-description text-dark" >
-      Programa una sesión introductoria gratuita individualizada conmigo para analizar tus necesidades de un sistema web.
-    </p>
-    <div class="row rrss mx-auto">
-      <div class="col-4">
-        <a href="https://wa.me/5493513592506?text=Hola%20fernando,%20quisiera%20una%20sesi%C3%B3n%20instructoria%20contigo%20" class="text-dark d-flex flex-column text-decoration-none ">
-          <i class="bi text-dark bi-whatsapp fs-1"></i>
-          <span class="span-rrss text-dark">WhatsApp</span>
-        </a>
-      </div>
-      <div class="col-4">
-        <a href="https://t.me/ldurigon" class="text-dark d-flex flex-column text-decoration-none ">
-          <i class="bi text-dark bi-telegram fs-1"></i>
-          <span class="span-rrss text-dark">Telegram</span>
-        </a>
-      </div>
-      <div class="col-4">
-        <a href="mailto:fernando10.000az@gmail.com?body=Hola.%20Quisiera%20una%20sesión%20gratuita%20contigo!" class="text-dark d-flex flex-column text-decoration-none ">
-          <i class="bi text-dark bi-envelope-at fs-1"></i>
-          <span class="span-rrss text-dark">Correo electrónico</span>
-        </a>
-      </div>
-      <div class="col-12 px-0" >
-        <h4 class="text-dark mt-5 mb-4">Dejame tu consulta</h4>
-        <form class="row mx-auto " id="contactForm">
-          <div class="col-12 mb-3">
-            <label class="text-start mb-2 d-block text-dark">¿Qué tipo de proyecto necesitas?</label>
-            <select class="form-select text-dark" id="tipoConsulta"  required>
-              <option selected disabled value="">-- Seleccione --</option>
-              <option>Sitio web institucional</option>
-              <option>Landing page</option>
-              <option>Sistema de turnos</option>
-              <option>Sistema POS / Ventas</option>
-              <option>E-commerce</option>
-              <option>Plataforma a medida </option>
-              <option>Mantenimiento / Soporte</option>
-              <option>No estoy seguro</option>
-            </select>
-          </div>
 
-          <div class="col-12 mb-3">
-            <label class="text-start mb-2 d-block text-dark">¿En que etapa estas?</label>
-            <select class="form-select text-dark" required id="consulta">
-              <option selected disabled value="">-- Seleccione --</option>
-              <option>Solo consultando</option>
-              <option>Quiero presupuesto</option>
-              <option>Quiero empezar lo antes posible</option>
-              <option>Tengo un sistema y necesito mejoras</option>
-            </select>
-          </div>
-          <div class="col-12 mb-3">
-            <label class="text-start mb-2 d-block text-dark">N° de telefonico.</label>
-            <input type="" placeholder="Ej: +549 351 - 359 250 6" class="form-control" required id="phone" name="">
-          </div>
-          <div class="col-12 mb-3">
-            <label class="text-start mb-2 d-block text-dark">Correo electrónico</label>
-            <input type="email" placeholder="tucorreo@ejemplo.com" class="form-control" id="email" required name="">
-          </div>
+<div class="col-12" id="contacto">
+    <div class="p-4 bg-white rounded-3 shadow-sm">
 
-          <div class="col-12">
-            <textarea id="text" rows="8" style="resize: none;" class="text-dark form-control" required placeholder="Contame brevemente qué idea tenes, qué problema querés soluciónar o que sistena necesitas..."></textarea>
-          </div>
+        <h4 class="mb-4">
+            <i class="bi bi-envelope-fill text-primary"></i>
+            Contacto
+        </h4>
 
-          <div class="col-12 py-4">
-            <button type="button" id="enviarCorreo" class="btn btn-primary">Enviar</button>
-          </div>
-        </form>
-      </div>
+        <p class="text-secondary mb-4">
+            ¿Tenés una propuesta, proyecto o simplemente querés ponerte en contacto?
+            Estoy disponible para nuevas oportunidades y colaboraciones.
+        </p>
+
+        <div class="row g-3">
+
+            <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100">
+                    <h6><i class="bi bi-person-fill"></i> Nombre</h6>
+                    <p class="mb-0">Luis Fernando Durigon</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100">
+                    <h6><i class="bi bi-envelope-fill"></i> Email</h6>
+                    <a href="mailto:tuemail@gmail.com" class="text-decoration-none">
+                        duigon.dev.97@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100">
+                    <h6><i class="bi bi-linkedin"></i> LinkedIn</h6>
+                    <a href="https://linkedin.com/in/luis-durigon" target="_blank" class="text-decoration-none">
+                        linkedin.com/in/luis-durigon
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100">
+                    <h6><i class="bi bi-github"></i> GitHub</h6>
+                    <a href="https://github.com/FernandoDurigon24" target="_blank" class="text-decoration-none">
+                        github.com/FernandoDurigon24
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+
+            <a href="cv_fernando_dec.pdf" target="_blank" class="btn btn-primary me-2">
+                <i class="bi bi-download"></i>
+                Descargar CV
+            </a>
+
+            <a href="mailto:durigon.dev.97@gmail.com" class="btn btn-outline-dark">
+                <i class="bi bi-send"></i>
+                Enviar Email
+            </a>
+
+        </div>
+
     </div>
-  </div>
-</section>
-<footer class="bg-white border-top py-4">
-  <div class="container">
-    <div class="row mx-auto">
-      <div class="col-sm-6 text-center text-sm-start">
-        <h3 class="text-dark">Fernando</h3>
-      </div>
-      <div class="col-sm-6">
-        <ul class="list-unstyled footer-list p-0 text-center text-sm-end">
-          <li class="text-dark">
-            Adrian escobar 3150, Córdoba Argentina.
-          </li>
-          <li class="text-dark">
-            <a href="tel:+5493513592506" class="text-dark">(+54) 9 351 359 - 250 6</a>
-          </li>
-          <li class="text-dark">
-            <a href="mailto:fernando10.000az@gmail.com" class="text-dark">fernando10.000az@gmail.com</a>
-          </li>
-        </ul>
-      </div>
+</div>
+
+<footer class="mt-5 py-4 border-top">
+    <div class="container">
+
+        <div class="text-center">
+
+            <h5 class="fw-bold mb-2">Luis Fernando Durigon</h5>
+
+            <p class="text-muted mb-3">
+                Desarrollador Full Stack | Estudiante de Ingeniería en Sistemas de Información
+            </p>
+
+            <div class="d-flex justify-content-center gap-3 mb-3">
+
+                <a href="https://github.com/FernandoDurigon24" target="_blank" class="text-dark fs-4">
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/luis-durigon/" target="_blank" class="text-primary fs-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:durigon.dev.97@gmail.com" class="text-danger fs-4">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+
+            </div>
+
+            <small class="text-muted">
+                © 2026 Luis Fernando Durigon. Todos los derechos reservados.
+            </small>
+
+        </div>
+
     </div>
-  </div>
 </footer>
 <script src="js/main.js"></script>
 <script src="js/sendEmail.js"></script>

@@ -3,49 +3,105 @@
 	width: 50%;
 }
 *{
-	font-family: Arial;
-	color: #FFF!important;
+	font-family: Verdana;
 }
+.p-3{
+	padding: 16px !important;
+}
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	gap:18px;
+	height: 100dvh;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.col-sm-6{
+	width: calc(50% - 9px);
+}
+.box-main{
+	height: calc(100% - 76px);
+	position: relative;
+}
+.ul-rrss{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin: 0 10px !important;
+	padding: 0 !important;
+	gap:16px;
+
+	font-size: 32px;
+}
+.ul-rrss li a {
+	color: #4a4a4a;
+}
+header{
+	width: 100%;
+}
+
 body{
-	background: linear-gradient(120deg,#0C0C25 , #000000 52%,  #999	 52% );
+	background: #eaeaea;
 	scroll-behavior: smooth;
 }
 .navbar > div,
 .main-box{
 	max-width:1320px;
 }
+.navlist li a{
+	color: #000!important;
+	font-size: 13px;
+}
+.navbar-brand{
+	font-size: 13px;
+}
 .navbar{
-	height: 88px;
-	background: linear-gradient(90deg , #0C0C25 , #000000);
+	background: #FFF;
+	height: 58px;
 }
-.wrapper{
-	
-	min-height: 100dvh;
-}
+
 .main-box{
 	position: relative;
 	z-index: 1;
 	height: 100%;
 }
 .navbar{
-	box-shadow: 18px 7px 14px 0px #444a;
+	box-shadow: 0px 2px 15px 0px #aaa;
 }
-main{
-	height: calc(100vh - 88px) ;
-	overflow-x: hidden;
+.boxes{
+	height: calc(100% - 78px) ;
+	width: 100%;
+	max-width: 1080px;
+}
+.navbar img{
+	height: 32px;
+}
+#about div p{
+	font-size: 13px;
 }
 .size65{
-	font-size: 65px;
+	font-size: 45px;
 	text-decoration: underline;
 }
 .size56{
-	font-size: 56px;
+	font-size: 36px;
 }
 .p-title{
 	line-height: 1.0 !important;
 }
+.stacks{
+	font-size: 13px;
+	color: #44aadd;
+}
+.h3-stacks{
+	color: #004298;
+}
+.bg-primary{
+	background: linear-gradient(to bottom, #205EAB, #000)!important;
+}
 .btn-primary{
-	background: #F05A24!important;
+	background: #205EAB!important;
 	border:0!important;
 	max-width: 309px;
 	font-size: 21px;
@@ -54,6 +110,9 @@ main{
 }
 .btn-primary:hover{
 	animation: hover 1s linear infinite;
+}
+.proyectos{
+	background: #000;
 }
 @keyframes hover{
 	0%{
@@ -68,7 +127,7 @@ main{
 	}
 }
 .text-warning{
-	color:  #F05A24!important;
+	color:  #205EAB!important;
 }
 .btn{
 	cursor: pointer;
@@ -88,6 +147,19 @@ main{
 	background: #FFF!important;
 	color: #0C0C25!important;
 
+}
+.img-fernando{
+	object-fit: contain;
+}
+@media (max-width:993px){
+	.wrapper{
+		height: auto !important;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.img-fernando{
+		height: 380px !important;
+	}
 }
 @media (max-width:1108px){
 	.size65{
@@ -114,20 +186,10 @@ main{
 	margin:auto;
 	object-fit: scale-down;
 }
-.card{
-	padding: 16px;
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	overflow:hidden;
-	margin: auto;
-	transition: all;
-}
-.card:hover{
-	animation: latir 1s linear infinite;
-}
+
+
 .bg-dark{
-	background: #000b!important;
+	background: #000!important;
 }
 @keyframes latir{
 	0%{
@@ -173,10 +235,19 @@ main{
 	width:32px;
 	height: 2px;
 	margin-bottom: 6px;
-	background: #FFF;
+	background: #000;
 	position: relative;
 	display: block; 
 	
+}
+.close-menu,.menu-text{
+	display: none;
+}
+.description-proyect{
+	font-size: 13px;
+}
+.img-card-proyects{
+	height: 89px;
 }
 .butonMenu{
 	height: 40px;
@@ -230,9 +301,7 @@ option,input{
 	.cuadrados{
 		height: 80px;
 	}
-	.navbar{
-		height: 65px;
-	}
+
 	.navbar-brand{
 		font-size: 16px;
 	}
@@ -241,6 +310,9 @@ option,input{
 @media (max-width: 480px){
 	.box-data-exp{
 		height: 175px;
+	}
+	.close-menu,.menu-text{
+		display: block  !important;
 	}
 	.span-rrss{
 		font-size: 11px;
@@ -258,7 +330,7 @@ option,input{
 	}
 	.navlist li a{
 		color: #000!important;
-		font-size: 19px;
+		font-size: 13px;
 	}
 	.navlist li{
 		padding: 8px 0;
@@ -287,6 +359,15 @@ option,input{
 	}
 	.box-flex-main {
 		min-height: 85vh;
+	}
+	.img-fernando{
+		height: 280px !important;
+	}
+	.boxes > div{
+		height: auto !important;
+	}
+	.img-container,.box-flex-main{
+		height: auto !important;
 	}
 }
 
